@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(92, 5, 92);
+}
+.container{
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+#visor #visor{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    width: 190px;
+    height: 60px;  
+}
+
+#segundo .botao{
+    font-size: 40px;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+#terceiro .botao{
+    font-size: 40px;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+#quarto .botao{
+    font-size: 40px;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+#quinto .botao{
+    font-size: 30px;
+    padding-left: 24px;
+    flex-direction: column;
+    border-radius: 10px;
+   
+}
+
+
+
+
+
+#igualdade .botao{
+    font-size: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: green;
+    border-radius: 10px;
+}

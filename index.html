@@ -5,52 +5,63 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <style type="text/css" >
-    .visor{
-
-      font-size: 1.5em;
-          }
-    
-    </style>
-    <!-- Bootstrap CSS -->
     <script type="text/javascript"  src="javascript.js"></script>
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
+
+ <div class="container">   
     <div>
         <div class="centralizarTexto">
           <h1>MINHA <BR>CALCULADORA</h1>
   </div>
-    <form action="" name="calc">
+ <form action="" name="calc">
 
+   <!--Visor-->
+    <div id="visor">
          <input type="text" id="visor" size="13" class="visor"/> <br>
+     </div>
 
+
+      <!--primeira linha de numeros-->
+     <div id="segundo">
          <input type="button"  class="botao"   value="7"  onclick="preencher(value)" />
          <input type="button"  class="botao"   value="8"  onclick="preencher(value)" />
          <input type="button"  class="botao"   value="9"  onclick="preencher(value)" />
          <input type="button"  class="botao"   value="/"  onclick="preencher(value)" /> <br>
-  
-         <input  type="button" class="botao"   value="5"   onclick="preencher(value)"/>
-         <input  type="button" class="botao"   value="6"   onclick="preencher(value)"/>
-         <input  type="button" class="botao"   value="*"   onclick="preencher(value)"/> <br>
-         
+     </div>
+     <div id="terceiro">
+     <!--segunda linha de numeros-->
          <input  type="button" class="botao"   value="4"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="5"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="6"   onclick="preencher(value)"/> 
+         <input  type="button" class="botao"   value="*"   onclick="preencher(value)"/><br>
+     </div>
+      <!--terceira linha de numeros-->
+      <div id="quarto">
          <input  type="button" class="botao"   value="1"   onclick="preencher(value)"/>
          <input  type="button" class="botao"   value="2"   onclick="preencher(value)"/>
          <input  type="button" class="botao"   value="3"   onclick="preencher(value)"/>
          <input  type="button" class="botao"   value="-"   onclick="preencher(value)"/> <br>
-  
-         <input  type="button" class="botao"   value="0"   onclick="preencher(value)"/>
-         <input  type="button" class="botao"   value="="  onclick="calcular()"/>
-         <input  type="button" class="botao"   value="C"   onclick="reseta()"/>
-         <input  type="button" class="botao"   value="+"   onclick="preencher(value)"/>
+    </div>
 
+       <!--quarta linha de numeros-->
+         <div id="quinto">
+         <input  type="button" class="botao"   value="C "   onclick="limpar()"/>
+         <input  type="button" class="botao"   value="0 "   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="+ "   onclick="preencher(value)"/> <br>
+    </div>
+        
+         <!--botao de igualdade-->
+    <div id="igualdade">
+         <input  type="button" class="botao"   value="="  onclick="calcular()"/>
+    </div>    
 
 </form>
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
+</div>   
     
   </body>
 </html>

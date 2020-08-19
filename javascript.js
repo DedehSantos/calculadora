@@ -4,7 +4,7 @@ function preencher(num){
     valor = document.calc.visor.value += num
 }
 
-function reseta(){
+function limpar(){
     document.calc.visor.value = '';
 }
 
