@@ -1,44 +1,56 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Calculadora</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
-    <script type="text/javascript" src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <style type="text/css" >
+    .visor{
+
+      font-size: 1.5em;
+          }
+    
+    </style>
+    <!-- Bootstrap CSS -->
+    <script type="text/javascript"  src="javascript.js"></script>
   </head>
-
-
   <body>
-    <h1>Minha Calculadora</h1>
-    <form name="calc">
-       <input type="text" name="visor"/> <br>
-       <input type="button" value="7" onclick="botao(value)"/>
-       <input type="button" value="8" onclick="botao(value)"/>
-       <input type="button" value="9" onclick="botao(value)"/>
-       <input type="button" value="/" onclick="botao(value)"/> <br>
+    <div>
+        <div class="centralizarTexto">
+          <h1>MINHA <BR>CALCULADORA</h1>
+  </div>
+    <form action="" name="calc">
 
-       <input type="button" value="4" onclick="botao(value)"/>
-       <input type="button" value="5" onclick="botao(value)"/>
-       <input type="button" value="6" onclick="botao(value)"/>
-       <input type="button" value="*" onclick="botao(value)"/> <br>
+         <input type="text" id="visor" size="13" class="visor"/> <br>
 
-       <input type="button" value="1" onclick="botao(value)"/>
-       <input type="button" value="2" onclick="botao(value)"/>
-       <input type="button" value="3" onclick="botao(value)"/>
-       <input type="button" value="-" onclick="botao(value)"/> <br>
+         <input type="button"  class="botao"   value="7"  onclick="preencher(value)" />
+         <input type="button"  class="botao"   value="8"  onclick="preencher(value)" />
+         <input type="button"  class="botao"   value="9"  onclick="preencher(value)" />
+         <input type="button"  class="botao"   value="/"  onclick="preencher(value)" /> <br>
+  
+         <input  type="button" class="botao"   value="5"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="6"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="*"   onclick="preencher(value)"/> <br>
+         
+         <input  type="button" class="botao"   value="4"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="1"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="2"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="3"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="-"   onclick="preencher(value)"/> <br>
+  
+         <input  type="button" class="botao"   value="0"   onclick="preencher(value)"/>
+         <input  type="button" class="botao"   value="="  onclick="calcular()"/>
+         <input  type="button" class="botao"   value="C"   onclick="reseta()"/>
+         <input  type="button" class="botao"   value="+"   onclick="preencher(value)"/>
 
-       <input type="button" value="0" onclick="botao(value)"/>
-       <input type="button" value="=" onclick="botao(value)"/>
-       <input type="button" value="C" onclick="botao(value)"/>
-       <input type="button" value="+" onclick="botao(value)"/>
-    </form>
 
-
-
-
-
-      
-
-</body>
+</form>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    
+  </body>
 </html>
